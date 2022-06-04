@@ -1,15 +1,15 @@
-import React from "react";
 import Box from "@mui/material/Box";
 import "./Score.css";
-import { width } from "@mui/system";
 
-const score = function (props) {
+const Score = function (props) {
   return (
-    <Box className="" sx={{ width: "200px" }}>
-      <h1>{props.name}</h1>
-      <p>100%</p>
+    <Box className="player">
+      <h2>{props.name}</h2>
+      <div className="lifeContainer">
+        <p className={"lifeValue  life" + props.name}>{props.life}</p>
+      </div>
     </Box>
   );
 };
 
-export default score;
+export default Score;
