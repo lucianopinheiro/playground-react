@@ -3,10 +3,12 @@ import "./Score.css";
 
 const Score = function (props) {
   return (
-    <Box className="player">
+    <Box className="player tile">
       <h2>{props.name}</h2>
       <div className="lifeContainer">
-        <p className={"lifeValue  life" + props.name}>{props.life}</p>
+        <p id={"life" + props.name} className="lifeValue" style={{ width: props.life + "%" }}>
+          {props.life}
+        </p>
       </div>
     </Box>
   );

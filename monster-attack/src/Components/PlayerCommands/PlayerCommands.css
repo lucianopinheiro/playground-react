@@ -1,5 +1,11 @@
-.playerCommands {
-  margin: 0;
-  padding: 0;
-  width: 400px;
+.tile {
+  padding: 1em;
+}
+button {
+  background-color: lightblue;
+  padding: 0.5em 1em;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-right: 1em;
 }

@@ -1,17 +1,23 @@
+import Box from "@mui/material/Box";
+
 import "./PlayerCommands.css";
 
 const PlayerCommands = function (props) {
   const handleAttack = () => {
-    props.setLifes[1]();
-    props.setLifes[0]();
+    props.command.attackMonster();
+    props.command.attackHero();
+  };
+
+  const handleHeal = () => {
+    props.command.heal();
   };
 
   return (
-    <div class="playerCommands">
+    <Box className="tile">
       <h2>Player Commands</h2>
       <button onClick={handleAttack}>Attack</button>
-      <button>Heal</button>
-    </div>
+      <button onClick={handleHeal}>Heal</button>
+    </Box>
   );
 };
 

@@ -3,7 +3,7 @@ body {
 }
 #content {
   width: 600px;
-  margin: auto;
+  margin: 1em auto;
   background-color: darkslategrey;
   padding: 1em;
   display: flex;
@@ -16,4 +16,19 @@ header h1 {
   padding: 1em;
   margin: 0;
   text-align: center;
+}
+h2 {
+  margin-top: 0;
+}
+
+.tile {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  flex-basis: 50%;
+}
+
+.gameRow {
+  display: flex;
+  gap: 10px;
 }
