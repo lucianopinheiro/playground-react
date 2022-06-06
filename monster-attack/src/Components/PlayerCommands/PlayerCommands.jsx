@@ -4,19 +4,22 @@ import "./PlayerCommands.css";
 
 const PlayerCommands = function (props) {
   const handleAttack = () => {
-    props.command.attackMonster();
-    props.command.attackHero();
+    props.round("attack");
   };
 
   const handleHeal = () => {
-    props.command.heal();
+    props.round("heal");
   };
 
   return (
     <Box className="tile">
       <h2>Player Commands</h2>
-      <button onClick={handleAttack}>Attack</button>
-      <button onClick={handleHeal}>Heal</button>
+      <button onClick={handleAttack} disabled={props.winner}>
+        Attack
+      </button>
+      <button onClick={handleHeal} disabled={props.winner}>
+        Heal
+      </button>
     </Box>
   );
 };

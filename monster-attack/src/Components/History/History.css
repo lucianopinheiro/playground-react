@@ -1,0 +1,14 @@
+.historyBox {
+  padding: 0.5em;
+}
+.historyBox p {
+  margin: 0;
+}
+
+.historyUl {
+  list-style: none;
+}
+.historyUl span {
+  display: inline-block;
+  width: 85px;
+}

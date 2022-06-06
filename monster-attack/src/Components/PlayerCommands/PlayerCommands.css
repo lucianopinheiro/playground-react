@@ -1,8 +1,8 @@
 .tile {
-  padding: 1em;
+  background-color: lightgray;
 }
 button {
-  background-color: lightblue;
+  background-color: darkgray;
   padding: 0.5em 1em;
   font-size: large;
   font-weight: bolder;
